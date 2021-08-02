@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/shoot.wav-a84d8c2f7d4cddbbfb795ed0f3a7a0ca.sample"
+
+[deps]
+
+source_file="res://samagri/sfx/shoot.wav"
+dest_files=[ "res://.import/shoot.wav-a84d8c2f7d4cddbbfb795ed0f3a7a0ca.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

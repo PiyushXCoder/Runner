@@ -1,0 +1,174 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://samagri/background/back.png" type="Texture" id=1]
+[ext_resource path="res://samagri/background/Clouds/Cloud 4.png" type="Texture" id=2]
+[ext_resource path="res://samagri/background/Clouds/Cloud 5.png" type="Texture" id=3]
+[ext_resource path="res://samagri/background/Clouds/Cloud 2.png" type="Texture" id=4]
+[ext_resource path="res://samagri/background/Clouds/Cloud 1.png" type="Texture" id=5]
+[ext_resource path="res://samagri/background/Clouds/Cloud 3.png" type="Texture" id=6]
+[ext_resource path="res://samagri/background/Clouds/Cloud 8.png" type="Texture" id=7]
+[ext_resource path="res://samagri/background/Clouds/Cloud 6.png" type="Texture" id=8]
+[ext_resource path="res://samagri/background/Clouds/Cloud 10.png" type="Texture" id=9]
+[ext_resource path="res://samagri/background/Clouds/Cloud 9.png" type="Texture" id=10]
+[ext_resource path="res://samagri/background/Clouds/Cloud 7.png" type="Texture" id=11]
+[ext_resource path="res://samagri/background/Clouds/Cloud 15.png" type="Texture" id=12]
+[ext_resource path="res://samagri/background/Clouds/Cloud 13.png" type="Texture" id=13]
+[ext_resource path="res://samagri/background/Clouds/Cloud 14.png" type="Texture" id=14]
+[ext_resource path="res://samagri/background/Clouds/Cloud 11.png" type="Texture" id=15]
+[ext_resource path="res://samagri/background/Clouds/Cloud 12.png" type="Texture" id=16]
+[ext_resource path="res://samagri/background/Clouds/Cloud 19.png" type="Texture" id=17]
+[ext_resource path="res://samagri/background/Clouds/Cloud 17.png" type="Texture" id=18]
+[ext_resource path="res://samagri/background/Clouds/Cloud 20.png" type="Texture" id=19]
+[ext_resource path="res://samagri/background/Clouds/Cloud 18.png" type="Texture" id=20]
+[ext_resource path="res://samagri/background/Clouds/Cloud 16.png" type="Texture" id=21]
+[ext_resource path="res://samagri/background/hills/hill3.png" type="Texture" id=22]
+[ext_resource path="res://samagri/background/hills/hill4.png" type="Texture" id=23]
+[ext_resource path="res://samagri/background/hills/hill2.png" type="Texture" id=24]
+[ext_resource path="res://samagri/background/hills/hill1.png" type="Texture" id=25]
+[ext_resource path="res://samagri/background/hills/hill5.png" type="Texture" id=26]
+
+[node name="Background" type="ParallaxBackground"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="back" type="Sprite" parent="Sky"]
+position = Vector2( 0, -79 )
+scale = Vector2( 1, 0.630556 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Cloud1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.25, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Cloud 1" type="Sprite" parent="Cloud1"]
+position = Vector2( 102, 306 )
+texture = ExtResource( 5 )
+
+[node name="Cloud 2" type="Sprite" parent="Cloud1"]
+position = Vector2( 502, 430 )
+texture = ExtResource( 4 )
+
+[node name="Cloud 3" type="Sprite" parent="Cloud1"]
+position = Vector2( 709, 388 )
+texture = ExtResource( 6 )
+
+[node name="Cloud 4" type="Sprite" parent="Cloud1"]
+position = Vector2( 944, 188 )
+texture = ExtResource( 2 )
+
+[node name="Cloud 5" type="Sprite" parent="Cloud1"]
+position = Vector2( 525, 282 )
+texture = ExtResource( 3 )
+
+[node name="Cloud2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Cloud 6" type="Sprite" parent="Cloud2"]
+position = Vector2( 936, 338 )
+texture = ExtResource( 8 )
+
+[node name="Cloud 7" type="Sprite" parent="Cloud2"]
+position = Vector2( 231, 82 )
+texture = ExtResource( 11 )
+
+[node name="Cloud 8" type="Sprite" parent="Cloud2"]
+position = Vector2( 944, 70 )
+texture = ExtResource( 7 )
+
+[node name="Cloud 9" type="Sprite" parent="Cloud2"]
+position = Vector2( 115, 160 )
+texture = ExtResource( 10 )
+
+[node name="Cloud 10" type="Sprite" parent="Cloud2"]
+position = Vector2( 565, 68 )
+texture = ExtResource( 9 )
+
+[node name="Cloud3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.15, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Cloud 11" type="Sprite" parent="Cloud3"]
+position = Vector2( 571, 171 )
+texture = ExtResource( 15 )
+
+[node name="Cloud 12" type="Sprite" parent="Cloud3"]
+position = Vector2( 728, 111 )
+texture = ExtResource( 16 )
+
+[node name="Cloud 13" type="Sprite" parent="Cloud3"]
+position = Vector2( 411, 79 )
+texture = ExtResource( 13 )
+
+[node name="Cloud 14" type="Sprite" parent="Cloud3"]
+position = Vector2( 483, 204 )
+texture = ExtResource( 14 )
+
+[node name="Cloud 15" type="Sprite" parent="Cloud3"]
+position = Vector2( 844, 451 )
+texture = ExtResource( 12 )
+
+[node name="Cloud4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="Cloud 16" type="Sprite" parent="Cloud4"]
+position = Vector2( 717, 224 )
+texture = ExtResource( 21 )
+
+[node name="Cloud 17" type="Sprite" parent="Cloud4"]
+position = Vector2( 208, 402 )
+texture = ExtResource( 18 )
+
+[node name="Cloud 18" type="Sprite" parent="Cloud4"]
+position = Vector2( 328, 297 )
+texture = ExtResource( 20 )
+
+[node name="Cloud 19" type="Sprite" parent="Cloud4"]
+position = Vector2( 300, 189 )
+texture = ExtResource( 17 )
+
+[node name="Cloud 20" type="Sprite" parent="Cloud4"]
+position = Vector2( 769, 287 )
+texture = ExtResource( 19 )
+
+[node name="Hills2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.3, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="hill5" type="Sprite" parent="Hills2"]
+position = Vector2( 974, 502 )
+texture = ExtResource( 26 )
+
+[node name="hill3" type="Sprite" parent="Hills2"]
+position = Vector2( 571, 499 )
+texture = ExtResource( 22 )
+
+[node name="hill1" type="Sprite" parent="Hills2"]
+position = Vector2( 674, 500 )
+texture = ExtResource( 25 )
+
+[node name="hill4" type="Sprite" parent="Hills2"]
+position = Vector2( 328, 501 )
+texture = ExtResource( 23 )
+
+[node name="Hills1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.2, 1 )
+motion_mirroring = Vector2( 1024, 0 )
+
+[node name="hill1" type="Sprite" parent="Hills1"]
+position = Vector2( 151, 501 )
+texture = ExtResource( 25 )
+
+[node name="hill4" type="Sprite" parent="Hills1"]
+position = Vector2( 824, 501 )
+texture = ExtResource( 23 )
+
+[node name="hill2" type="Sprite" parent="Hills1"]
+position = Vector2( 478, 501 )
+texture = ExtResource( 24 )

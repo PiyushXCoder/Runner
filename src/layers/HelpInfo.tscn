@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://samagri/theme/user_interface.tres" type="Theme" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 480.0
+margin_bottom = 169.0
+color = Color( 0.215686, 0.223529, 0.243137, 0.509804 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 9.0
+margin_top = 2.0
+margin_right = 523.0
+margin_bottom = 126.0
+theme = ExtResource( 1 )
+text = "Hot Keys:
+A,W,D or Left,Up,Right to move
+K or Ctrl to fire
+P to pause"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

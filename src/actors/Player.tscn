@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://samagri/player/Player.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://src/actors/Player.gd" type="Script" id=2]
+[ext_resource path="res://src/objects/Gun.gd" type="Script" id=3]
+[ext_resource path="res://samagri/sfx/jump.wav" type="AudioStream" id=4]
+[ext_resource path="res://samagri/sfx/hit.wav" type="AudioStream" id=5]
+[ext_resource path="res://samagri/sfx/shoot.wav" type="AudioStream" id=6]
+[ext_resource path="res://samagri/back-home.wav" type="AudioStream" id=7]
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 378, 303 )
+collision_mask = 28
+script = ExtResource( 2 )
+speed = Vector2( 200, 500 )
+
+[node name="PlatformDetector" type="RayCast2D" parent="."]
+enabled = true
+collision_mask = 14
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_bottom = 600
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+drag_margin_left = 0.4
+drag_margin_top = 0.75
+drag_margin_right = 0.4
+drag_margin_bottom = 0.75
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 4.76837e-07, 3 )
+scale = Vector2( 0.8, 0.9 )
+frames = ExtResource( 1 )
+animation = "idle"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 12, 31, 12, -4, 2, -9, -9, -4, -9, 31 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 2, 10 )
+scale = Vector2( 0.3, 0.25 )
+
+[node name="GunRight" type="Position2D" parent="."]
+position = Vector2( 18, 12 )
+script = ExtResource( 3 )
+
+[node name="GunLeft" type="Position2D" parent="."]
+position = Vector2( -17, 12 )
+script = ExtResource( 3 )
+
+[node name="Die" type="Timer" parent="."]
+
+[node name="JumpAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+
+[node name="HitAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+
+[node name="ShootAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.0
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="timeout" from="Die" to="." method="_on_Die_timeout"]

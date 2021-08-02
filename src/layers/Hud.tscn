@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://samagri/theme/user_interface.tres" type="Theme" id=1]
+[ext_resource path="res://src/layers/Hud.gd" type="Script" id=2]
+[ext_resource path="res://samagri/coin.png" type="Texture" id=3]
+[ext_resource path="res://samagri/star.png" type="Texture" id=4]
+[ext_resource path="res://samagri/clock.png" type="Texture" id=5]
+[ext_resource path="res://samagri/pause.png" type="Texture" id=6]
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+theme = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+margin_left = 50.0
+margin_top = 41.0
+margin_right = 194.0
+margin_bottom = 81.0
+color = Color( 0.152941, 0.172549, 0.188235, 0.862745 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="Control/ColorRect"]
+margin_left = 40.0
+margin_top = 1.0
+margin_right = 69.0
+margin_bottom = 39.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control/ColorRect"]
+position = Vector2( 19, 20 )
+texture = ExtResource( 4 )
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+margin_left = 224.0
+margin_top = 41.0
+margin_right = 368.0
+margin_bottom = 81.0
+color = Color( 0.152941, 0.172549, 0.188235, 0.862745 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coins" type="Label" parent="Control/ColorRect2"]
+margin_left = 40.0
+margin_top = 1.0
+margin_right = 69.0
+margin_bottom = 39.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control/ColorRect2"]
+position = Vector2( 19, 20 )
+texture = ExtResource( 3 )
+
+[node name="ColorRect3" type="ColorRect" parent="Control"]
+margin_left = 403.0
+margin_top = 42.0
+margin_right = 547.0
+margin_bottom = 82.0
+color = Color( 0.152941, 0.172549, 0.188235, 0.862745 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Label" parent="Control/ColorRect3"]
+margin_left = 40.0
+margin_top = 1.0
+margin_right = 69.0
+margin_bottom = 39.0
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Control/ColorRect3"]
+position = Vector2( 19, 20 )
+texture = ExtResource( 5 )
+
+[node name="CountDown" type="Timer" parent="."]
+wait_time = 300.0
+one_shot = true
+autostart = true
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2( 931, 29 )
+normal = ExtResource( 6 )
+action = "pause"
+visibility_mode = 1
+
+[connection signal="timeout" from="CountDown" to="." method="_on_CountDown_timeout"]

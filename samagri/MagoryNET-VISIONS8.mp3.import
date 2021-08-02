@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/MagoryNET-VISIONS8.mp3-ed0164558580829bc8a59ce7aa5d3a2e.mp3str"
+
+[deps]
+
+source_file="res://samagri/MagoryNET-VISIONS8.mp3"
+dest_files=[ "res://.import/MagoryNET-VISIONS8.mp3-ed0164558580829bc8a59ce7aa5d3a2e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
