@@ -32,6 +32,17 @@ __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
 
+[node name="background_fill" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2( 1024, 600 )
+
+[node name="ColorRect" type="ColorRect" parent="background_fill"]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.47451, 0.690196, 0.870588, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Sky" type="ParallaxLayer" parent="."]
 motion_mirroring = Vector2( 1024, 0 )
 
@@ -43,42 +54,42 @@ centered = false
 
 [node name="Cloud1" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.25, 1 )
-motion_mirroring = Vector2( 1024, 0 )
+motion_mirroring = Vector2( 1024, 600 )
 
 [node name="Cloud 1" type="Sprite" parent="Cloud1"]
 position = Vector2( 102, 306 )
 texture = ExtResource( 5 )
 
 [node name="Cloud 2" type="Sprite" parent="Cloud1"]
-position = Vector2( 502, 430 )
+position = Vector2( 478, 523.177 )
 texture = ExtResource( 4 )
 
 [node name="Cloud 3" type="Sprite" parent="Cloud1"]
-position = Vector2( 709, 388 )
+position = Vector2( 747.5, 350.5 )
 texture = ExtResource( 6 )
 
 [node name="Cloud 4" type="Sprite" parent="Cloud1"]
-position = Vector2( 944, 188 )
+position = Vector2( 904.318, 85.5 )
 texture = ExtResource( 2 )
 
 [node name="Cloud 5" type="Sprite" parent="Cloud1"]
-position = Vector2( 525, 282 )
+position = Vector2( 609, 402 )
 texture = ExtResource( 3 )
 
 [node name="Cloud2" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.2, 1 )
-motion_mirroring = Vector2( 1024, 0 )
+motion_mirroring = Vector2( 1024, 600 )
 
 [node name="Cloud 6" type="Sprite" parent="Cloud2"]
-position = Vector2( 936, 338 )
+position = Vector2( 930.318, 382 )
 texture = ExtResource( 8 )
 
 [node name="Cloud 7" type="Sprite" parent="Cloud2"]
-position = Vector2( 231, 82 )
+position = Vector2( 310.755, 88.2996 )
 texture = ExtResource( 11 )
 
 [node name="Cloud 8" type="Sprite" parent="Cloud2"]
-position = Vector2( 944, 70 )
+position = Vector2( 771.355, 54.4821 )
 texture = ExtResource( 7 )
 
 [node name="Cloud 9" type="Sprite" parent="Cloud2"]
@@ -86,55 +97,55 @@ position = Vector2( 115, 160 )
 texture = ExtResource( 10 )
 
 [node name="Cloud 10" type="Sprite" parent="Cloud2"]
-position = Vector2( 565, 68 )
+position = Vector2( 774.147, 258.603 )
 texture = ExtResource( 9 )
 
 [node name="Cloud3" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.15, 1 )
-motion_mirroring = Vector2( 1024, 0 )
+motion_mirroring = Vector2( 1024, 600 )
 
 [node name="Cloud 11" type="Sprite" parent="Cloud3"]
-position = Vector2( 571, 171 )
+position = Vector2( 652, 160.542 )
 texture = ExtResource( 15 )
 
 [node name="Cloud 12" type="Sprite" parent="Cloud3"]
-position = Vector2( 728, 111 )
+position = Vector2( 546.5, 256.083 )
 texture = ExtResource( 16 )
 
 [node name="Cloud 13" type="Sprite" parent="Cloud3"]
-position = Vector2( 411, 79 )
+position = Vector2( 470.5, 44.9821 )
 texture = ExtResource( 13 )
 
 [node name="Cloud 14" type="Sprite" parent="Cloud3"]
-position = Vector2( 483, 204 )
+position = Vector2( 238.388, 483.575 )
 texture = ExtResource( 14 )
 
 [node name="Cloud 15" type="Sprite" parent="Cloud3"]
-position = Vector2( 844, 451 )
+position = Vector2( 881.318, 447.575 )
 texture = ExtResource( 12 )
 
 [node name="Cloud4" type="ParallaxLayer" parent="."]
 motion_scale = Vector2( 0.1, 1 )
-motion_mirroring = Vector2( 1024, 0 )
+motion_mirroring = Vector2( 1024, 600 )
 
 [node name="Cloud 16" type="Sprite" parent="Cloud4"]
-position = Vector2( 717, 224 )
+position = Vector2( 900.194, 198.5 )
 texture = ExtResource( 21 )
 
 [node name="Cloud 17" type="Sprite" parent="Cloud4"]
-position = Vector2( 208, 402 )
+position = Vector2( 329.166, 337 )
 texture = ExtResource( 18 )
 
 [node name="Cloud 18" type="Sprite" parent="Cloud4"]
-position = Vector2( 328, 297 )
+position = Vector2( 393.666, 182.5 )
 texture = ExtResource( 20 )
 
 [node name="Cloud 19" type="Sprite" parent="Cloud4"]
-position = Vector2( 300, 189 )
+position = Vector2( 53, 471.575 )
 texture = ExtResource( 17 )
 
 [node name="Cloud 20" type="Sprite" parent="Cloud4"]
-position = Vector2( 769, 287 )
+position = Vector2( 721, 513.177 )
 texture = ExtResource( 19 )
 
 [node name="Hills2" type="ParallaxLayer" parent="."]

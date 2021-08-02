@@ -5,9 +5,12 @@ onready var camera = $Camera2D
 onready var score = $CanvasLayer/Control/ColorRect2/Score
 onready var coins = $CanvasLayer/Control/ColorRect3/Coins
 
+onready var play_button = $CanvasLayer/Control/PlayButton
+
 func _ready() -> void:
 	score.text = str(Global.score)
 	coins.text = str(Global.coins)
+	play_button.grab_focus()
 
 func _physics_process(delta: float) -> void:
 	$Camera2D.offset_h += 2 * delta

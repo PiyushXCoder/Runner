@@ -1,5 +1,7 @@
 extends Control
 
+onready var resume_button = $ResumeButton
+
 func _ready() -> void:
 	hide()
 
@@ -10,6 +12,7 @@ func _input(event):
 func open():
 	show()
 	get_tree().paused = true
+	resume_button.grab_focus()
 
 func close():
 	hide()

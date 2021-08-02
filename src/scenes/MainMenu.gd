@@ -2,6 +2,10 @@ extends Control
 class_name MainMenu
 
 onready var camera = $Camera2D
+onready var play_button = $CanvasLayer/Control/PlayButton
+
+func _ready() -> void:
+	play_button.grab_focus()
 
 func _physics_process(delta: float) -> void:
 	camera.offset_h += 1.5 * delta

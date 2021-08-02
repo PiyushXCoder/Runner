@@ -75,7 +75,7 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[node name="MainMenu" type="Control"]
+[node name="GameWon" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme = ExtResource( 3 )
@@ -139,7 +139,7 @@ __meta__ = {
 position = Vector2( 243, 307 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 8
+frame = 1
 playing = true
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
