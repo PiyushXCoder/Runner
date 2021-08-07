@@ -123,7 +123,6 @@ __meta__ = {
 position = Vector2( 521, 219 )
 frames = SubResource( 12 )
 animation = "New Anim"
-frame = 6
 playing = true
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
